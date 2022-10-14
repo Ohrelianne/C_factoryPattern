@@ -1,3 +1,2 @@
 # C_factoryPattern
-
-===Factory Pattern===
+## Factory Pattern

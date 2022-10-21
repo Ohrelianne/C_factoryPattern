@@ -1,11 +1,14 @@
-#ifndef _SANDWICHMAKER_ 
-#define _SANDWICHMAKER_
-#include "Sandwich.h"
+#ifndef _sandwichMAKER_ 
+#define _sandwichMAKER_
+#include "sandwich.h"
 
-class SandwichMaker {
+class sandwichMaker {
     public:
-    virtual Sandwich makeSandwich();
+    virtual sandwich makesandwich();
 
+    public:
+    sandwichMaker();
+    virtual ~sandwichMaker();
 };
 
 #endif

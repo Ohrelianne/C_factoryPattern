@@ -1,13 +1,15 @@
-#ifndef _KEBABMAKER_ 
-#define _KEBABMAKER_
+#ifndef _kebabMAKER_ 
+#define _kebabMAKER_
 
 #include "sandwichmaker.h"
-#include "Kebab.h"
+#include "kebab.h"
 
-class KebabMaker : public SandwichMaker {
+class kebabMaker : public sandwichMaker {
     public: 
-    Sandwich makeSandwich();
+    sandwich makesandwich();
 
+    kebabMaker();
+    ~kebabMaker();
 };
 
 #endif

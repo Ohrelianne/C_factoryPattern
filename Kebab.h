@@ -1,8 +1,8 @@
-#ifndef _KEBAB_ 
-#define _KEBAB_
-#include "Sandwich.h"
+#ifndef _kebab_ 
+#define _kebab_
+#include "sandwich.h"
 
-class Kebab : public Sandwich {
+class kebab : public sandwich {
     public:
         double getSize() const;
     private:

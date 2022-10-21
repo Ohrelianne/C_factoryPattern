@@ -1,9 +1,11 @@
-#ifndef _SANDWICH_ 
-#define _SANDWICH_
+#ifndef _sandwich_ 
+#define _sandwich_
 
-class Sandwich {
+class sandwich {
     public:
-        virtual double const getSize();
+        virtual double getSize() const;
+        virtual ~sandwich();
+        sandwich();
     private:
         double Size;
 };

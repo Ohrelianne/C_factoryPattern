@@ -2,9 +2,9 @@
 #include <iostream>
 #include <string.h>
 #include "kebabmaker.h"
-#include "Kebab.h"
+#include "kebab.h"
 #include "clubsandwichmaker.h"
-#include "ClubSandwich.h"
+#include "clubsandwich.h"
 
 void Chef::Welcome(){
     char rep1[30];
@@ -18,11 +18,11 @@ void Chef::Welcome(){
         int result2 = strcmp(typesandwich, "kebab");
         int result3 = strcmp(typesandwich, "clubsandwich");
         if (result2==0){
-            KebabMaker km;
-            Sandwich kebabTropBon = km.makeSandwich();
+            kebabMaker km;
+            sandwich kebabTropBon = km.makesandwich();
         } else if (result3 == 0){
-            ClubSandwichMaker cm;
-            Sandwich sandwichTriangle = cm.makeSandwich();
+            clubsandwichmaker cm;
+            sandwich sandwichTriangle = cm.makesandwich();
         }else{
             std::cout << "If you're here to waste my time, get out !" << std::endl;
         }

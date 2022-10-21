@@ -1,5 +1,5 @@
-#include "Kebab.h" 
+#include "kebab.h" 
 
-Kebab::Getsize(){
+double kebab::getSize() const{
     return size;
 }

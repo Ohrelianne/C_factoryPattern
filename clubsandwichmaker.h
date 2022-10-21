@@ -1,11 +1,13 @@
-#ifndef _CLUBSANDWICHMAKER_ 
-#define _CLUBSANDWICHMAKER_
+#ifndef _clubsandwichmaker_ 
+#define _clubsandwichmaker_
 
 #include "sandwichmaker.h"
-class ClubSandwichMaker : public SandwichMaker {
+class clubsandwichmaker : public sandwichMaker {
     public:
-    Sandwich makeSandwich();
+    sandwich makesandwich();
 
+    clubsandwichmaker();
+    ~clubsandwichmaker();
 };
 
 #endif

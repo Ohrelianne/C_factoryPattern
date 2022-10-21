@@ -1,5 +1,5 @@
-#include "ClubSandwich.h" 
+#include "clubsandwich.h" 
 
-ClubSandwich::Getsize(){
+double clubsandwich::getSize() const{
     return size;
 }

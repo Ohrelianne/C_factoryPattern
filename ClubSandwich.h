@@ -1,9 +1,9 @@
-#ifndef _CLUBSANDWICH_ 
-#define _CLUBSANDWICH_
+#ifndef _clubsandwich_ 
+#define _clubsandwich_
 
-#include "Sandwich.h"
+#include "sandwich.h"
 
-class ClubSandwich : public Sandwich {
+class clubsandwich : public sandwich {
     public:
         double getSize() const;
     private:

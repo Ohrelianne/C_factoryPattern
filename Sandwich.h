@@ -3,11 +3,11 @@
 
 class sandwich {
     public:
-        virtual double getSize() const;
-        virtual ~sandwich();
-        sandwich();
-    private:
-        double Size;
+        virtual double getSize() const = 0;
+        virtual ~sandwich(){};
+        sandwich(){};
+    protected:
+        double size;
 };
 
 #endif

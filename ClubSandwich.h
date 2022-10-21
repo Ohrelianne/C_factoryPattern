@@ -6,8 +6,8 @@
 class clubsandwich : public sandwich {
     public:
         double getSize() const;
-    private:
-        double size;
+        clubsandwich();
+        ~clubsandwich();
 };
 
 #endif

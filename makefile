@@ -1,3 +1,5 @@
+all: main.o kebab.o
+	g++ -o main main.o kebab.o 
 main.o : main.cpp
 	g++ -c main.cpp -Wall
 chef.o : chef.cpp chef.h kebabmaker.h clubsandwichmaker.h clubsandwich.h kebab.h chef.cpp

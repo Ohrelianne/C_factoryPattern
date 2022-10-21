@@ -5,8 +5,8 @@
 class kebab : public sandwich {
     public:
         double getSize() const;
-    private:
-        double size;
+        ~kebab();
+        kebab();
 };
 
 

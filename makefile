@@ -6,5 +6,5 @@ chef.o : chef.cpp chef.h
 	g++ -c tree.cpp -Wall
 kebabmaker.o : sandwichmaker.h kebabmaker.h kebabmaker.cpp
 	g++ -c -Wall kebabmaker.cpp
-clubsandiwichmaker.o : sandwichmaker.h clubsandwich.h clubsandwichmaker.cpp
+clubsandwichmaker.o : sandwichmaker.h clubsandwich.h clubsandwichmaker.cpp
 	g++ -c -Wall clubsandwichmaker.cpp

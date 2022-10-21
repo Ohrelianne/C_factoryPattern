@@ -1,5 +1,5 @@
 #include "clubsandwichmaker.cpp"
 
-void ClubSandwichMaker::makeSandwich{
+ClubSandwich ClubSandwichMaker::makeSandwich(){
     return new ClubSandwich();
 }

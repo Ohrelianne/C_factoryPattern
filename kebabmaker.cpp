@@ -1,5 +1,6 @@
 #include "kebabmaker.h"
 
-void KebabMaker::makeSandwich{
-    return new Kebab();
-}
+Kebab KebabMaker::makeSandwich(){
+    Kebab k;
+    return k;
+};

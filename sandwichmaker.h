@@ -4,9 +4,7 @@
 
 class sandwichMaker {
     public:
-    virtual sandwich* makesandwich();
-
-    public:
+    sandwich* makesandwich(int number, double size);
     sandwichMaker();
     ~sandwichMaker();
 };

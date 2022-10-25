@@ -4,8 +4,7 @@
 class sandwich {
     public:
         virtual double getSize() const = 0;
-        ~sandwich(){};
-        sandwich(){};
+        virtual ~sandwich(){};
     protected:
         double size;
 };

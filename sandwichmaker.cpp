@@ -1,8 +1,15 @@
 #include "sandwichmaker.h"
+#include "kebab.h"
+#include "clubsandwich.h"
 #include <iostream>
 
-sandwich* sandwichMaker::makesandwich(){
-    return new sandwich();
+sandwich* sandwichMaker::makesandwich(int number, double size){
+    if(number==0){
+        return new kebab(size);
+    } else {
+        return new clubsandwich(size);
+    }
+    
 }
 
 sandwichMaker::sandwichMaker(){

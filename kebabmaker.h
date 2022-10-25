@@ -6,7 +6,7 @@
 
 class kebabMaker : public sandwichMaker {
     public: 
-    sandwich makesandwich();
+    sandwich* makesandwich() override;
 
     kebabMaker();
     ~kebabMaker();

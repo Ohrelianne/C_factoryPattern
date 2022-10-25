@@ -2,9 +2,11 @@
 #define _clubsandwichmaker_
 
 #include "sandwichmaker.h"
+
+
 class clubsandwichmaker : public sandwichMaker {
     public:
-    sandwich makesandwich();
+    sandwich* makesandwich() override;
 
     clubsandwichmaker();
     ~clubsandwichmaker();

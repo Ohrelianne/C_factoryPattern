@@ -2,8 +2,8 @@
 #include <iostream>
 #include "kebab.h"
 
-sandwich kebabMaker::makesandwich(){
-    kebab k;
+sandwich* kebabMaker::makesandwich(){
+    sandwich* k = new kebab();
     return k;
 };
 

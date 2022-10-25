@@ -1,8 +1,9 @@
-all: main.o kebab.o
-	g++ -o main main.o kebab.o 
-main.o : main.cpp
+all: main.o kebab.o chef.o kebabmaker.o clubsandwichmaker.o sandwichmaker.h
+	g++ -o main main.o kebab.o chef.o kebabmaker.o clubsandwichmaker.o sandwichmaker.h
+
+main.o : kebab.o chef.o kebabmaker.o clubsandwichmaker.o sandwichmaker.h main.cpp 
 	g++ -c main.cpp -Wall
-chef.o : chef.cpp chef.h kebabmaker.h clubsandwichmaker.h clubsandwich.h kebab.h chef.cpp
+chef.o : chef.cpp chef.h kebabmaker.h clubsandwichmaker.h clubsandwich.h kebab.h chef.cpp 
 	g++ -c chef.cpp -Wall
 kebabmaker.o : sandwichmaker.h kebabmaker.h kebab.h sandwich.h kebabmaker.cpp
 	g++ -c -Wall kebabmaker.cpp

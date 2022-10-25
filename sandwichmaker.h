@@ -4,11 +4,11 @@
 
 class sandwichMaker {
     public:
-    virtual sandwich makesandwich();
+    virtual sandwich* makesandwich();
 
     public:
     sandwichMaker();
-    virtual ~sandwichMaker();
+    ~sandwichMaker();
 };
 
 #endif

@@ -1,7 +1,7 @@
 #include "sandwichmaker.h"
 #include <iostream>
 
-void sandwichMaker::makesandwich(){
+sandwich* sandwichMaker::makesandwich(){
     return new sandwich();
 }
 

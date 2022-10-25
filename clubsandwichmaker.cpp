@@ -2,8 +2,8 @@
 #include "clubsandwich.h"
 #include <iostream>
 
-sandwich clubsandwichmaker::makesandwich(){
-    clubsandwich cs;
+sandwich* clubsandwichmaker::makesandwich(){
+    sandwich* cs = new clubsandwich();
     return cs;
 }
 

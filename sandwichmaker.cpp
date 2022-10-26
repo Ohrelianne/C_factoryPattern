@@ -18,9 +18,9 @@ sandwich* sandwichMaker::makesandwich(char* type, double size){
 }
 
 sandwichMaker::sandwichMaker(){
-    std::cout << "Création d'un sandwichMaker" << std::endl;
+    std::cout << "We hire a new sandwichMaker" << std::endl;
 }
 
 sandwichMaker::~sandwichMaker(){
-    std::cout << "On tue un sandwichMaker" << std::endl;
+    std::cout << "We kill a sandwichMaker" << std::endl;
 }

@@ -2,6 +2,7 @@
 #include <iostream>
 
 double kebab::getSize() const{
+    std::cout << "Kebab of size : "<<size<< std::endl;
     return size;
 }
 

@@ -1,38 +1,33 @@
 #include "chef.h"
 #include <iostream>
 #include <string.h>
-#include "kebabmaker.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include "kebab.h"
-#include "clubsandwichmaker.h"
 #include "clubsandwich.h"
 #include "sandwichmaker.h"
 
 void Chef::Welcome(){
     char rep1[30];
     char typesandwich[30];
-    sandwich* kebabTropBon = NULL;
-    sandwich* sandwichTriangle = NULL;
+    
     std::cout << "Welcome to the supermarket ! Would you like a sandwich ? (answer: y or n)"<< std::endl;
     std::cin >> rep1;
     int result1 = strcmp(rep1, "y");
     if (result1 == 0){
         std::cout << "Which type of sandwich would you like ? (answer:  kebab or clubsandwich)"<<std::endl;
         std::cin>>typesandwich;
-        int result2 = strcmp(typesandwich, "kebab");
-        int result3 = strcmp(typesandwich, "clubsandwich");
-        if (result2==0){
-            kebabMaker km;
-            sandwich* kebabTropBon = km.makesandwich();
-        } else if (result3 == 0){
-            clubsandwichmaker cm;
-            sandwich* sandwichTriangle = cm.makesandwich();
-        }else{
+        sandwichMaker sm;
+        sandwich* sandwichmystere;
+        sandwichmystere = sm.makesandwich(typesandwich, 9.0);
+        if (sandwichmystere == NULL){
             std::cout << "If you're here to waste my time, get out !" << std::endl;
+            return ;
         }
-
-    } else{
+        sandwichmystere->getSize();
+        delete sandwichmystere;
+        }
+    else{
         std::cout << "If you're here to waste my time, get out !" << std::endl;
-    }
-    delete(kebabTropBon);
-    delete(sandwichTriangle);
-}
+    }  
+}  

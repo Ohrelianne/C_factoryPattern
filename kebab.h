@@ -7,6 +7,7 @@ class kebab : public sandwich {
         double getSize() const;
         ~kebab();
         kebab();
+        kebab(double length);
 };
 
 

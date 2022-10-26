@@ -4,7 +4,7 @@
 
 class sandwichMaker {
     public:
-    sandwich* makesandwich(int number, double size);
+    sandwich* makesandwich(char* type, double size);
     sandwichMaker();
     ~sandwichMaker();
 };
